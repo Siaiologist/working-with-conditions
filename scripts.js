@@ -1,6 +1,6 @@
 /************************** Exercise 1 ***********************/
 
-// List five different examples of a website using a conditional statement. 
+// List five different examples where a web app uses a conditional statement.
 
 
 
@@ -46,25 +46,22 @@ if (cash > 20) {
 // Write down here what you think the result will be. Then log the result to the console to check your assumption.
 
 
+
 /************************** Exercise 3 ***********************/
 
-let itemToBuy = "";
-let savings = 100;
-if (savings > 500) {
-  itemToBuy = "Computer";
-} else if (savings > 200) {
-  itemToBuy = "Phone";
-} else if (savings > 0) {
-  itemToBuy = "Dinner";
+let userAge = 5;
+
+if (userAge > 18) {
+  console.log("You can vote.");
 } else {
-  itemToBuy = "...still saving...";
+  console.log("You can't vote.");
 }
 
+// Run the above code to see what it logs to the console.
 
-// Based on the above code, what will be the value of itemToBuy after the code is run? Write your guess below. How will you check your answer to be sure it is correct?
+// What will it log if we change the age to 25? Write your guess here, and then make that change and see if you were right.
 
-
-
+// People whose age is 18 can vote in the U.S, but currently, if `userAge` is 18, we'll log that the user cannot vote. Fix the condition of the `if` statement so that it works correctly.
 
 
 
@@ -104,19 +101,8 @@ const profit = salesTotal - wholesalePrice * quantity;
 /*********************** BONUS EXERCISES *********************/
 
 
+
 /************************** Exercise 6 ***********************/
-
-// Write a function that takes three numbers as arguments and returns the largest number among them. Do not use `Math.max`, though you're welcome to do so after you solve it using conditionals.
-
-
-
-
-
-
-
-
-
-/************************** Exercise 7 ***********************/
 
 function evenOrOdd(number) {
   if (number % 2 === 0) {
@@ -137,7 +123,7 @@ function evenOrOdd(number) {
 
 
 
-/************************** Exercise 8 ***********************/
+/************************** Exercise 7 ***********************/
 
 // Create a function that takes in one argument, a user's password. Check to see if the password is longer than 12 characters. If it is, alert 'Welcome', if it is not, alert 'You need to enter a longer password.'
 
@@ -147,6 +133,6 @@ function evenOrOdd(number) {
 
 
 
-/************************** Exercise 9 ***********************/
+/************************** Exercise 8 ***********************/
 
 // Create a function that takes in two arguments, a user's password and what the user wrote to confirm their password. Check to see if the user's passwords are the exact same string. If they are, alert 'Welcome', if they are not, alert 'Your passwords do not match.'
